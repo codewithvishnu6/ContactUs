@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Project 2</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        background-color: #4158D0;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .card{
+        width: 380px;
+        height: 620px;
+        background-color: rgb(238, 238, 255);
+        border-radius: 30px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        box-shadow: 0px 0px 30px black;
+    }
+    .card img{
+        width: 100%;
+        height: 41%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    .card p{
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: rgb(53, 53, 186);
+        margin-left: 3px;
+    }
+    .textbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 13px;
+    }
+    h2{
+        font-style: italic;
+        font-weight: bold;
+        color: red;
+    }
+    #amountbox{
+        width: 80%;
+        height: 10%;
+        background-color: rgb(255, 255, 34);
+        border-radius: 20px;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #leftbox{
+        /* width: fit-content; */
+        height: 100%;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    .imgbox{
+        height: 100px;
+        width: 45px;
+        margin-top: 58px;
+    }
+    #paymentbutton{
+        width: 80%;
+        height: 8%;
+        background-color: rgb(34, 3, 34);
+        color: white;
+        border-radius: 20px;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+    .cancelbox a{
+        text-decoration: none;
+        color: black;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1.3rem;
+        /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
+    }
+    @media (max-width:350px){
+        .container{
+            flex-direction: column;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="CUsersvishnDesktop00323.jpg"/>
+            <div class="textbox">
+                <h2>
+                    Order Summary
+                </h2>
+                <p>
+                    Hey Guys,<br/>
+                    How Are You I'm Vishnu kumar ...<br/>
+                    I'm Working As A Software Developer Engineer <br/>
+                                                                ( SDE ) !!!<br/>
+                    In a Amazon Since **July-2022** ...
+                </p>
+            </div>
+            <div id="amountbox">
+                <div id="leftbox">
+                    <div class="imgbox">
+                        <img src="CUsersvishnDesktop0000000.png">
+                    </div>
+                    <div class="textamount">
+                        <p style="color: black;">
+                            Music Plan
+                        </p>
+                        <p style="color: black;">$199.99/P.A</p>
+                    </div>
+                </div>
+                <div id="rightbox">
+                    <a href="file:///C:/Users/vishn/Desktop/timercounter.html">Change Plan</a>
+                </div>
+            </div>
+            <button id="paymentbutton">
+                Proceed To Payment
+            </button>
+        <div class="cancelbox">
+            <a href="file:///C:/Users/vishn/Desktop/CssCardproject1.html">Cancel Order</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
